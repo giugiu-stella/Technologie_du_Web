@@ -1,0 +1,113 @@
+.identification {
+  font-family: $font-1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: $color-5;
+}
+
+.form h1 {
+  font-size: 2rem;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin-bottom: 1rem;
+  color: $color-4;
+}
+
+.form-inputs {
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  text-align:center;
+}
+
+.form-label {
+  display: inline-block;
+  height: 20px;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: $color-4;
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: $color-4;
+  border-radius: 2px;
+  height: 40px;
+  width: 300px;
+  border-color: $color-4;
+  border-width: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.form-input-btn {
+  background-color: $color-1;
+  color:white;
+  height: auto;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  position:relative;
+  cursor: pointer;
+  width: 150px;
+  right:0px;
+}
+
+.form-input-btn:hover {
+  background-color: $color-2;
+  color: $color-4;
+  border: 1px solid black;
+}
+
+.form-input-login {
+  width: auto;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $color-4;
+  width: 80%;
+  text-align: center;
+  height: auto;
+}
+
+.checkbox-container {
+  display: block;
+  height:auto;
+  padding-top: 20px;
+
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline;
+  }
+}
+
+.form-input-login a {
+  text-decoration: none;
+  color:$color-4;
+  font-weight: 600;
+}

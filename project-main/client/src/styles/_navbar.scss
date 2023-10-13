@@ -1,0 +1,58 @@
+.navbar {
+    top:0px;
+    position:sticky;
+    background-color: $color-5;
+    height: 70px;
+    width: 100%;
+    box-shadow: 3px 3px $color-1;
+    color: $color-3;
+    display: block;
+    flex-direction: row;
+
+    .leftContainer {
+        display: flex;
+        float: left;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightContainer {
+        display: flex;
+        float: right;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icones {
+        display: flex;
+        float: left;
+        height: auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    
+        .icon-button {
+            width:50px;
+            height:50px;
+            border: none;
+            background-color: $color-5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+          
+        .icon-button:hover {
+            background-color: $color-1;
+        }
+          
+        .icon-button svg { 
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

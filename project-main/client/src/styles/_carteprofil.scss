@@ -1,0 +1,37 @@
+.carteprofil {
+    display: flex;
+    border-radius: 10px;
+    background-color: $color-1;
+    height: 60px;
+    margin-bottom: 10px;
+    color: $color-5;
+    width: 100%;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+
+    .pdp {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        float: left;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .pseudo {
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+    }
+}
+
+.carteprofil:hover {
+    border: solid 2px $color-5;
+    color: $color-5;
+}

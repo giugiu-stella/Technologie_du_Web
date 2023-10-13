@@ -1,0 +1,186 @@
+.messages {
+    display: flex;
+    height: auto;
+    color: $color-3;
+    margin-left: $margin-sides;
+    margin-right: $margin-sides;
+    margin-top: 35px;
+    height: 85vh;
+    border-radius: 2%;
+
+    .listeConv {
+        float: left;
+        width: 30%;
+        flex-direction: column;
+
+        .listeConv-head{
+            background-color: $color-4;
+            height:10vh;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            border-top-left-radius: 10px;
+
+            .listeConv-head-gauche{
+                display:flex;
+                border-radius: 50%;
+                margin-top: 4vh;
+                width:50%;
+                margin-left:15px;
+                color : grey;
+                font-size: 150%;
+                justify-content: center;
+            }
+            .listeConv-head-droit{
+                display: flex;
+                width:50%;
+                justify-content: center;
+
+                .listeConv-head-droit-newpost{
+                
+                    border: none;
+                    width:45px;
+                    height:45px;
+                    margin-top:25px;
+                    background-color: $color-4;
+                    transition: filter 300ms;
+                    cursor: pointer;
+                }
+            
+                .listeConv-head-droit-newpost:hover {
+                    filter: brightness(1.2);
+                }
+
+            }  
+
+        }
+        .newmessage{
+            background-color: rgb(75, 75, 78);
+            height:100px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+
+            .appa{
+            
+                border: none;
+                resize: none;
+                width: 83%;
+                padding: 5px;
+                font-family: $font-1;
+                border-radius: 10px;
+                margin: 25px 0 0 2%;
+                height: 50px;
+        
+                .text-input{
+                    border: none;
+                    resize: none;
+                    width:70%;
+                    padding: 5px;
+                    font-family: $font-1;
+                    border-radius: 10px;
+                    margin: 0 0 0 0;
+                    height: 50px;
+                    background-color: white;
+
+                    justify-content: center;
+                }
+                .recher{
+                    height: 40px;
+                    width: 40px;
+                    float: right;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    background-color: rgb(75, 75, 78);
+                    border-radius: 5%;
+                    transition: filter 300ms;
+                    cursor: pointer;
+                }
+            
+                .recher:hover {
+                    filter: brightness(1.2);
+                }
+            }
+        }
+        .listeConv-users{
+            background-color: #343841;
+            width:100%;
+            height:75vh;
+            border-bottom-left-radius: 10px;
+        }
+    
+    }
+    
+    .chatroom {
+        float: left;
+        width: 70%;
+        flex-direction: column;
+
+        .chatroom-mur{
+            background-color:$color-3;
+            width:100%;
+            height:75vh;
+            border-top-right-radius: 10px;
+        }
+        
+
+        .chatroom-message{
+            background-color: $color-4;
+            height:10vh;
+            width:100%;
+            border-bottom-right-radius: 10px;
+
+            .ecrireUnmsg {
+                display: block;
+                height: auto;
+                width: 100%;
+                height:100%;
+                background-color:  $color-4;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+        
+                p{
+                    height: auto;
+                    width: auto;
+                    font-style: italic;
+                    font-size: small;
+                    color: $color-5;
+                    margin: 10px 10px 0 10px;
+                }
+        
+                .text-input{
+                    border: none;
+                    resize: none;
+                    width: 83%;
+                    padding: 5px;
+                    font-family: $font-1;
+                    border-radius: 10px;
+                    margin: 25px 0 0 2%;
+                    height: 50px;
+                }
+        
+                .sends{
+                    margin-top: 32px;
+                    height: 40px;
+                    width: 40px;
+                    float: right;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 5%;
+                    border: none;
+                    background-color: $color-4;
+                    border-radius: 5%;
+                    transition: filter 300ms;
+                    cursor: pointer;
+                }
+            
+                .send:hover {
+                    filter: brightness(1.2);
+                }
+            }
+        }
+    }
+  
+}
+

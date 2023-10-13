@@ -1,0 +1,230 @@
+
+.profil{
+    margin-left: $margin-sides;
+    margin-right: $margin-sides;
+    display: flex;
+    flex-direction: column;
+
+    .profil-header{
+        margin-top: 70px;
+        float: left;
+        height: auto;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: $color-5;
+
+        .profil-header-gauche{
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            .profileUserImg{
+                width: 150px;
+                height: 150px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                }
+            }
+
+            .profilaction{
+                float: left;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                height: 40px;
+                width: 100%;
+                color: $color-5;
+                border: none;
+                background: $color-1;
+                border-radius: 10px;
+                transition: filter 300ms;
+                cursor: pointer;
+            }
+
+            .profilaction:hover{
+                filter: brightness(1.2);
+            }
+        }
+
+        .profil-header-droit{
+            display: flex;
+            flex-direction: column;
+
+            .username{
+                font-size: 35px;
+                height: 50%;
+                display: flex;
+            }
+
+            .bio{
+                display: flex;
+                float: left;
+                font-size: 1rem;
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+          
+            .info {
+                display: flex;
+
+                .follower{ 
+                    color: $color-5;
+                    font-size: 1rem;
+                    margin: 20px 20px 20px 0;
+                    height: 50%;
+                    text-align: center;
+                    display: flex;
+                }
+            }
+
+        }
+    }
+
+    .mur {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 70px;
+
+        .mesposts{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            min-width: 400px;
+            width: 80%;
+        }
+    }
+}
+    
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+
+    .boxFollow {
+        width: 400px;
+        margin: 0 auto;
+        height: auto;
+        max-height: 70vh;
+        margin-top: calc(100vh - 85vh - 20px);
+        background: #fff;
+        border-radius: 4px;
+        padding: 20px;
+        border: 1px solid #999;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxModif {
+        width: 600px;
+        margin: 0 auto;
+        height: auto;
+        max-height: 70vh;
+        margin-top: calc(100vh - 85vh - 20px);
+        background: #fff;
+        border-radius: 4px;
+        padding: 20px;
+        border: 1px solid #999;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+
+        .box {
+            margin-bottom: 10px;
+
+            .box2 {
+                display: flex;
+                height: auto;
+                align-items: center;
+
+                .preview {
+                    margin-left: 50px;
+                    height: 50px;
+                    width: 50px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border: none;
+                        border-radius: 50%;
+                    }
+                }
+
+                .text-input {
+                    border: solid 2px $color-1;
+                    resize: none;
+                    width: 100%;
+                    padding: 5px;
+                    font-family: $font-1;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    height: 80px;
+                }
+            }
+        }
+
+        .saveButtonBox {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            justify-content: center;
+            display: flex;
+
+            .saveButton {
+                float: left;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                padding: 0 10px 0 10px;
+                height: 40px;
+                color: $color-5;
+                border: none;
+                background: $color-1;
+                border-radius: 10px;
+                transition: filter 300ms;
+                cursor: pointer;
+            }
+
+            .saveButton:hover{
+                filter: brightness(1.2);
+            }
+        }
+    }
+
+    .boxheader {
+        width: auto;
+        display: block;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px dotted $color-1;
+
+        h3 {
+            font-size: large;
+            float: left;
+        }
+
+        .cross {
+            float: right;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-weight: bold;
+    }
+}

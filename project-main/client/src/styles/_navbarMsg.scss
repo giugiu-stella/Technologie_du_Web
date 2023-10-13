@@ -1,0 +1,64 @@
+.navbarMsg {
+    display: grid;
+    height:auto;
+    background-color: $color-1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+
+    .headermsg{
+        height: 60px;
+        display: block;
+        width: 100%;
+
+        .newmsg{
+            margin-top: 5px;
+            height: 40px;
+            width: 40px;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            border: none;
+            background-color: $color-1;
+            border-radius: 5%;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+    
+        .newmsg:hover {
+            filter: brightness(1.2);
+        }
+    
+    }
+
+    .ecrireUnmsg {
+        display: block;
+        height: auto;
+        width: 100%;
+        background-color: $color-6;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        
+
+        .sendmsg {
+            margin-top: 75px;
+            height: 40px;
+            width: 40px;
+            float: right;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            border: none;
+            background-color: $color-6;
+            border-radius: 5%;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+    
+        .sendmsg:hover {
+            filter: brightness(1.2);
+        }
+    }
+}

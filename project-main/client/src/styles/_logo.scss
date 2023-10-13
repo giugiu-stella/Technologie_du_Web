@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    float: left;
+    height: auto;
+    width: auto;
+  
+    img {
+        margin-left: 10px;
+        height: 70px;
+        object-fit:contain;
+    }
+}

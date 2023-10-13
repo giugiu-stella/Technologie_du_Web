@@ -1,0 +1,15 @@
+.stop{
+    height: 35px;
+    width: 40px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+
+
+    .stop:hover {
+        filter: brightness(0.9);
+    }
+
+}

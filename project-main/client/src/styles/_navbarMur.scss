@@ -1,0 +1,169 @@
+.navbarMur {
+    display: grid;
+    height:auto;
+    background-color: $color-1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+
+    .header {
+        height: 60px;
+        display: block;
+        width: 100%;
+
+        .newPost{
+            margin-top: 5px;
+            height: 40px;
+            width: 40px;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            border: none;
+            background-color: $color-1;
+            border-radius: 5%;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+    
+        .newPost:hover {
+            filter: brightness(1.2);
+        }
+    
+    
+        .recherche {
+            float: left;
+            display: flex;
+            align-items: center;
+            margin: 8px 15px;
+            height: 35px;
+            border-radius: 15px 0 0 15px;
+            background: $color-5;
+            width: 260px;
+            padding-left: 10px;
+    
+            .search-input {
+                background: transparent;
+                border: none;
+                outline:none;
+                width: 220px;
+                font-weight: 500;
+                font-size: 13px;
+            }
+    
+            .loupe {
+                height: 35px;
+                width: 40px;
+                float: right;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background-color: $color-5;
+                border-bottom-right-radius: 15px;
+                border-top-right-radius: 15px;
+                cursor: pointer;
+            }
+    
+            .loupe:hover {
+                filter: brightness(0.9);
+            }
+
+            .murrecherche{
+                width: 600px;
+                margin: 0 auto;
+                height: auto;
+                max-height: 70vh;
+                margin-top: calc(100vh - 85vh - 20px);
+                background: transparentize($color: black, $amount: 0.4);
+                border-radius: 4px;
+                padding: 20px;
+                border: 1px solid #999;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: $color-5;
+                }
+                
+                h3 {
+                    color: $color-5;
+                }
+            }
+        }
+    
+        .recherche::placeholder {
+            color: #595959;
+            font-size: 12px;
+        }
+    
+        .trending {
+            position: static;
+            display: flex;
+            margin-top: 5px;
+            height: 40px;
+            width: 40px;
+            float: right;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            border: none;
+            background-color: $color-1;
+            border-radius: 5%;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+    
+        .trending:hover {
+            filter: brightness(1.2);
+        }
+    }
+
+    .ecrireUnPost {
+        display: block;
+        height: auto;
+        width: 100%;
+        background-color: $color-1;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        p {
+            height: auto;
+            width: auto;
+            font-style: italic;
+            font-size: small;
+            color: $color-5;
+            margin: 10px 10px 0 10px;
+        }
+
+        .text-input {
+            border: none;
+            resize: none;
+            width: 83%;
+            padding: 5px;
+            font-family: $font-1;
+            border-radius: 10px;
+            margin: 0 0 10px 10px;
+            height: 110px;
+        }
+
+        .send {
+            margin-top: 75px;
+            height: 40px;
+            width: 40px;
+            float: right;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            border: none;
+            background-color: $color-1;
+            border-radius: 5%;
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+    
+        .send:hover {
+            filter: brightness(1.2);
+        }
+    }
+}

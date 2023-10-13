@@ -1,0 +1,51 @@
+
+//$font-1: "Consolas";
+$font-1: "Open Sans";
+$color-1: #a081a8;
+$color-2: #494050;
+$color-3: #282c34;
+$color-4: #20232a;
+$color-5: #ffffff;
+$color-6: #5c4364;
+
+$margin-sides: 12%;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    height:100%;
+}
+
+body {
+    max-width: 100%;
+    min-width: 615px;
+    height: auto;
+    font-family: $font-1;
+    color: $color-3;
+    background-color: $color-2;
+
+    h1 {
+        margin: 0.4rem auto;
+        max-width: 700px;
+    }
+
+    p{
+        margin: 0.4rem auto;
+        max-width: 700px;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-3;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $color-3;
+}
