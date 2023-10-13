@@ -9,7 +9,8 @@ Pour lancer le projet :
   * ncu -u
   * npm update
   * npm start
--  côté Back =>
+ 
+ - côté Back =>
   * cd projet_main/server/src
   * npm install
   * node index.js
