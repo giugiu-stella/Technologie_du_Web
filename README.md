@@ -1,4 +1,4 @@
-# Technologie du Web
+# Technologies du Web
 Sorbonne Université | Licence 3
 
 ## Lancement du Projet
