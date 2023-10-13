@@ -1,16 +1,19 @@
-# Technologie_du_Web
-Sorbonne université | Licence 3
+# Technologie du Web
+Sorbonne Université | Licence 3
 
-Pour lancer le projet : 
-- côté Front =>
-  * cd projet_main/client
-  * rm -r node_modules (on désinstalle pour mieux réinstaller avec tous les updates)
-  * npm install -g npm-check-updates
-  * ncu -u
-  * npm update
-  * npm start
- 
- - côté Back =>
-  * cd projet_main/server/src
-  * npm install
-  * node index.js
+## Lancement du Projet
+
+### Côté Frontend
+
+1.  cd projet_main/client
+2.  rm -r node_modules (on désinstalle pour mieux réinstaller avec tous les updates)
+3.  npm install -g npm-check-updates
+4.  ncu -u
+5.  npm update
+6.  npm start
+
+### Côté Backend
+
+1.  cd projet_main/server/src
+2.  npm install
+3.  node index.js
